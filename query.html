@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions for You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<style >
+body{
+    margin :auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    height: 500px;
+    text-align: center;
+    background-color: rgb(238, 243, 246);
+    color: rgb(67, 199, 199);
+    border: 5px solid red;
+    border-radius:25px;
+    
+}
+#base{
+
+    background-color: rgb(169, 210, 224); 
+    color:rgb(3, 3, 3);
+    border: 2px solid rgb(38, 3, 16);
+    border-radius: 10px;
+}
+
+hr{
+    border: 1px solid rgb(0, 0, 0);
+    width:50%;
+    align-items: center;
+}
+
+#handler{
+    
+    /* border: 2px solid rgb(7, 243, 15);
+    border-radius: 5px; */
+    margin: 5px auto 50px;
+    
+    /* padding: 2px; */
+    /* clear: both; */
+    
+}
+h1{
+    
+    margin:12px;
+    /* overflow: auto;
+    clear: both; */
+}
+/* nav{
+    text-decoration: none;
+    position:fixed ;
+    left: 12px;
+    top:10px;
+    background-color: rgb(1, 1, 28);
+    color: rgb(203, 234, 246);
+    margin: auto;
+    float: left; 
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 25px;
+    width: 875px;
+    overflow: auto;
+    box-sizing: border-box;
+
+} 
+
+ul{
+    list-style: none;
+    margin: auto;
+    width: fit-content;
+}
+
+li {
+    margin-left: 8px;
+    padding: 2px;
+    float: left;
+    display:contents;
+    overflow: auto;
+    /*
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: baseline; 
+    
+}
+
+img{ 
+    position: absolute;
+    left:350px;
+    top:5px;
+    border:2px solid black;   
+    border-radius: 50%;
+    width:50px;
+} */
+
+#question{
+    margin: 25px auto 55px;
+    padding-bottom: 40px;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 600px;
+
+    /* float: left;
+    overflow: auto; 
+    width: 100%;*/
+}
+
+.options{
+    margin: 5px auto 0;
+    padding: 5px;
+    background-color: rgb(240, 212, 212); 
+    color:black;
+    border : 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 400px;
+}
+.options:hover{
+
+    background-color: black; 
+    color:white;
+    border : 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button{
+   background-color: rgba(55, 236, 67, 0.865);
+   color: beige;
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 5px;
+    margin: 15px 100px  0;
+    padding: 2px;
+    font-size: 30px;
+    width: 45px;
+}
+button:hover{
+    border: 2px solid rgb(115, 236, 148);
+    cursor: pointer;
+    font-size: 35px;
+ }
+button:visited{
+    border: 2px solid rgb(100, 236, 220);
+}
+
+ /*
+#submit{
+    
+    font-size: 20px;
+    background-color: rgb(27, 220, 107);
+    
+}
+#pre{
+    font-size: 10px;
+    background-color: aqua;
+}
+#next{
+    font-size: 10px;
+    background-color: aqua;
+
+} */
+</style>
+    <!-- <nav>
+        <ul>
+            <li>Home</li>
+            <li>Other Questions </li>
+            <li>contect us</li>
+            <li>About</li>   
+        </ul>
+    </nav> -->
+    <div id="base">
+        <!-- <img src="Capture 6.PNG" alt="error"> -->
+        <h1 id="head"> WELCOME DEAR FRIEND </h1>
+        <hr>
+        <div id="question">
+            <h3 id="q">
+                Question will shown here !
+            </h3>
+            <h5 class="options" >option 1</h5>
+            <h5 class="options" >option 2</h5>
+            <h5 class="options" >option 3</h5>
+            <h5 class="options" >option 4</h5>
+            <!-- <input type="radio" for="question" id="op1" class="options" >
+            <label for="op1" >option1</label>
+            <input type="radio" for="question" id="op2" class="options" >
+            <label for="op2" >option2</label>
+            <input type="radio" for="question" id="op3"  class="options" >
+            <label for="op3" >option3</label>
+            <input type="radio" for="question" id="op4" class="options" >
+            <label for="op4" >option4</label> -->
+        </div>
+    
+        <div id="handler">
+            <button id="pre" onclick="pre()"> Pre </button>
+            <button id="submit" onclick="OK()">Submit</button>
+            <button id="next" onclick="next()">Next</button>
+        </div>
+    </div>
+    <p>endOfBody</p>
+    <script >
+    function OK(){
+    alert("submitted");
+    }
+    function pre(){
+    alert("previous Q.");
+    }
+    function next(){
+    alert("next Q.");
+    }
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
